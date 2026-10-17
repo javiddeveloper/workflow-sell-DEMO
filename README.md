@@ -12,12 +12,9 @@
 [![Live Demo](https://img.shields.io/badge/demo-live%20on%20GitHub%20Pages-2ea44f?style=for-the-badge&logo=github)](https://javiddeveloper.github.io/workflow-sell-DEMO/)
 
 ![Persian RTL](https://img.shields.io/badge/UI-Persian%20%7C%20RTL-e8365a.svg)
-![Tests](https://img.shields.io/badge/backend%20tests-1%2C991%20passing-success.svg)
-![Stack](https://img.shields.io/badge/stack-Next.js%20%7C%20Django%20%7C%20PostgreSQL-orange.svg)
-![Deployment](https://img.shields.io/badge/deployment-on--premise%20%7C%20Docker-8a2be2.svg)
 ![License](https://img.shields.io/badge/license-commercial-lightgrey.svg)
 
-[**Live Demo**](https://javiddeveloper.github.io/workflow-sell-DEMO/) • [**Three businesses**](#-three-businesses-four-roles) • [**Screenshots**](#-interface) • [**Capabilities**](#-core-capabilities) • [**Architecture**](#%EF%B8%8F-architecture) • [**Get it**](#-get-it-for-your-business)
+[**Live Demo**](https://javiddeveloper.github.io/workflow-sell-DEMO/) • [**Three businesses**](#-three-businesses-four-roles) • [**Screenshots**](#-interface) • [**Capabilities**](#-core-capabilities) • [**Get it**](#-get-it-for-your-business)
 
 </div>
 
@@ -116,7 +113,7 @@ The demo ships with three complete, believable businesses. Dates are always rela
 - **Service businesses with appointments** — salons, clinics, studios, workshops: requests from Instagram and the website, deposits, follow-ups, repeat customers.
 - **Sales offices** — real estate, car dealers, agencies: listings or leads that move through stages, viewings, contracts and commissions.
 - **Small teams that outgrew Trello and a notebook** — and want the owner to see the month without asking everyone.
-- **Businesses that cannot put customer data in a foreign cloud** — everything runs on your own server in Iran, with Persian dates and Iranian messengers.
+- **Businesses that cannot put customer data in a foreign cloud** — everything stays with you, with Persian dates and Iranian messengers.
 
 ---
 
@@ -129,9 +126,9 @@ The demo ships with three complete, believable businesses. Dates are always rela
 - **Group by service or status**, priorities, labels, checklists, attachments, watchers, full history.
 
 ### 2. Requests arrive by themselves
-- **Google Form / website form intake** — answers become cards, routed to the right board by the requested service; duplicates are recognised.
+- **Website and Google Form requests** become cards on the right board for the requested service; repeat customers are recognised.
 - **Automatic follow-up** a few hours after a request arrives.
-- **Import from Trello** with a dry-run preview.
+- **Bring your Trello boards** over in a few minutes.
 
 ### 3. One file per customer
 - Search by **any part of a phone number** (+98, 0912…, Persian digits), name, file number or national ID.
@@ -143,50 +140,14 @@ The demo ships with three complete, believable businesses. Dates are always rela
 - **Payment reminders** that repeat every morning until settled. Customers never receive automatic messages.
 
 ### 5. Planner and notifications
-- Week view with meetings, visits and deadlines; team availability; a calendar link for the phone (ICS).
+- Week view with meetings, visits and deadlines; team availability; your calendar on your phone.
 - Notifications on **Bale, Telegram and email**, with quiet hours and a daily report.
 - Work can be sent to **external partners** (a photographer, a notary, a supplier) over Bale, Telegram or WhatsApp.
 
-### 6. Built for operations
-- Roles with **per-board access and hidden fields**; two-factor sign-in; audit log of sensitive actions.
-- **Monthly report** with CSV export; full data export and scheduled backups.
-- Signed licence per server; when it expires the system becomes read-only — nothing is lost.
-
----
-
-## 🏛️ Architecture
-
-```mermaid
-flowchart TB
-    subgraph Office["Your server (on-premise)"]
-        CADDY["Caddy (HTTPS)"]
-        WEB["Next.js — Persian RTL UI"]
-        API["Django REST API"]
-        WORKER["Celery — reminders, follow-ups, reports"]
-        DB[("PostgreSQL")]
-        REDIS[("Redis")]
-    end
-
-    subgraph Outside["Optional connections"]
-        FORM["Google Form / website"]
-        BOTS["Bale · Telegram · Email"]
-    end
-
-    CADDY --> WEB
-    CADDY --> API
-    API --> DB
-    API --> REDIS
-    WORKER --> REDIS
-    WORKER --> DB
-    FORM -->|webhook| API
-    WORKER --> BOTS
-```
-
-Installed with Docker Compose in one command; works in offline networks (offline install bundle), with daily backups and one-command updates.
-
-### About this demo
-
-This repository contains only the **static demo build**. The real interface runs against an in-browser sample backend that answers the same API with the same visibility rules. Nothing you do here is sent anywhere; changes live in your browser tab until you press «شروع دوباره». All people, phone numbers, businesses and prices are fictional.
+### 6. Built for a real team
+- **Each role sees only its share** — per-board access and hidden fields for phone numbers and amounts.
+- **Monthly report** with an Excel-friendly export; full data export and regular backups.
+- Your data stays yours: even when a subscription ends, nothing is deleted.
 
 ---
 
@@ -195,7 +156,7 @@ This repository contains only the **static demo build**. The real interface runs
 **Miz-e Kar is a commercial product**, installed on your own server by its author and set up for your business:
 
 - Boards, stages, forms and customer fields shaped around your process
-- Installation on your server or inside your office network, including offline networks
+- Set up on your own server or inside your office network
 - Bale / Telegram bots, email and your website form connected
 - Data import from Trello, spreadsheets or your old system
 
@@ -233,4 +194,4 @@ This repository contains only the **static demo build**. The real interface runs
 
 ---
 
-© Javid Sattar. All rights reserved. This demo is provided for evaluation only; the product source is not included.
+© Javid Sattar. All rights reserved. This demo is provided for evaluation only. All people, phone numbers, businesses and prices in it are fictional.

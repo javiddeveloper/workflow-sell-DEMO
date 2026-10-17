@@ -17,7 +17,7 @@
 ![Deployment](https://img.shields.io/badge/deployment-on--premise%20%7C%20Docker-8a2be2.svg)
 ![License](https://img.shields.io/badge/license-commercial-lightgrey.svg)
 
-[**Live Demo**](https://javiddeveloper.github.io/workflow-sell-DEMO/) • [**Two businesses**](#-two-businesses-four-roles) • [**Screenshots**](#-interface) • [**Capabilities**](#-core-capabilities) • [**Architecture**](#%EF%B8%8F-architecture) • [**Get it**](#-get-it-for-your-business)
+[**Live Demo**](https://javiddeveloper.github.io/workflow-sell-DEMO/) • [**Three businesses**](#-three-businesses-four-roles) • [**Screenshots**](#-interface) • [**Capabilities**](#-core-capabilities) • [**Architecture**](#%EF%B8%8F-architecture) • [**Get it**](#-get-it-for-your-business)
 
 </div>
 
@@ -62,16 +62,16 @@ Use the **«دمو»** button in the corner to switch business, role and scenari
 
 ---
 
-## 🏪 Two Businesses, Four Roles
+## 🏪 Three Businesses, Four Roles
 
-The demo ships with two complete, believable businesses. Dates are always relative to *today*, so the dashboard is never stale.
+The demo ships with three complete, believable businesses. Dates are always relative to *today*, so the dashboard is never stale.
 
-| | 💇‍♀️ **Liana Beauty Salon** (Pounak, Tehran) | 🏠 **Ashianeh Real Estate** (Tehranpars, Tehran) |
-|---|---|---|
-| **Boards** | Appointments & services · Bridal packages · Supplies | Owners' listings · Buyers · Contract to deed |
-| **Flow** | Request → consultation → booked (deposit) → in the chair → aftercare → done | Listing → valuation → photos & ads → viewings → offer → contract → deed transfer |
-| **Sample data** | ~290 requests over 11 weeks, 160 clients, deposits and balances, allergy notes, wedding-day checklists | ~110 cards: retirees, heirs and young couples selling their homes; buyers with loans; inquiries and notary dates |
-| **Try** | [Owner](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=CEO) · [Manager](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=PM) · [Reception](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=SALES) · [Colorist](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=MEMBER) | [Owner](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=CEO) · [Office manager](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=PM) · [Senior agent](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=SALES) · [Agent](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=MEMBER) |
+| | 💇‍♀️ **Liana Beauty Salon** (Pounak, Tehran) | 🏠 **Ashianeh Real Estate** (Tehranpars, Tehran) | 🌍 **Pol-e Saderat Khalij** (Tehran & Muscat) |
+|---|---|---|---|
+| **Boards** | Appointments & services · Bridal packages · Supplies | Owners' listings · Buyers · Contract to deed | Projects (one list per service, like their Trello) · Designers |
+| **Flow** | Request → consultation → booked (deposit) → in the chair → aftercare → done | Listing → valuation → photos & ads → viewings → offer → contract → deed transfer | English Google Form → routed to the right service list ("Other" → review inbox) → delivered; designs approved by the CEO, then the PM |
+| **Sample data** | ~290 requests over 11 weeks, 160 clients, deposits and balances, allergy notes, wedding-day checklists | ~110 cards: retirees, heirs and young couples selling their homes; buyers with loans; inquiries and notary dates | Export packaging, coaching, sourcing, trade-fair tours and company registration in Oman; Iranian and Omani clients, payments in toman and Omani rial |
+| **Try** | [Owner](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=CEO) · [Manager](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=PM) · [Reception](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=SALES) · [Colorist](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=salon&role=MEMBER) | [Owner](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=CEO) · [Office manager](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=PM) · [Senior agent](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=SALES) · [Agent](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=estate&role=MEMBER) | [CEO](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=export&role=CEO) · [Project manager](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=export&role=PM) · [Sales](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=export&role=SALES) · [Design lead](https://javiddeveloper.github.io/workflow-sell-DEMO/?biz=export&role=MEMBER) |
 
 | Role | Sees | Can do |
 |---|---|---|
@@ -218,11 +218,12 @@ This repository contains only the **static demo build**. The real interface runs
 - **صاحب کسب‌وکار ماه را می‌بیند** — چه آمد، از کجا، کدام خدمت فروش دارد، چه تحویل شد و چه عقب افتاده.
 - **هر نقش فقط سهم خودش را می‌بیند** — همکار بدون اجازه‌ی شما تلفن مشتری و مبالغ را نمی‌بیند.
 
-**دموی دو کسب‌وکار واقعی‌نما:**
+**دموی سه کسب‌وکار واقعی‌نما:**
 - **سالن زیبایی لیانا (پونک)** — نوبت‌ها و خدمات، پکیج عروس، خرید مواد؛ بیعانه، مانده‌ی حساب، حساسیت‌ها و چک‌لیست روز مراسم.
 - **مشاور املاک آشیانه (تهرانپارس)** — فروش خانه‌ی مالکان معمولی: بازنشسته‌ها، وراث و زوج‌های جوان؛ از ثبت فایل و کارشناسی قیمت تا بازدید، قولنامه، استعلامات و انتقال سند در دفترخانه.
+- **پل صادرات خلیج (تهران و مسقط)** — طراحی و تولید بسته‌بندی، کوچینگ صادراتی، سوپرمارکت صادراتی، تور نمایشگاهی و ثبت شرکت در عمان؛ فرم گوگل انگلیسی که هر خدمت را به لیست خودش می‌برد، برد طراحان با تأیید دومرحله‌ای، پرداخت به تومان و ریال عمان.
 
-با دکمه‌ی «دمو» گوشه‌ی صفحه بین دو کسب‌وکار و چهار نقش (مدیر، مدیرعامل، فروش/پذیرش، همکار) جابه‌جا شوید.
+با دکمه‌ی «دمو» گوشه‌ی صفحه بین سه کسب‌وکار و چهار نقش (مدیر، مدیرعامل، فروش/پذیرش، همکار) جابه‌جا شوید.
 
 **[▶ باز کردن دموی آنلاین](https://javiddeveloper.github.io/workflow-sell-DEMO/)** — بدون ثبت‌نام و نصب؛ همه‌چیز با داده‌ی نمونه در مرورگر اجرا می‌شود.
 

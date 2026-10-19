@@ -1,6 +1,6 @@
-:HL["/workflow-sell-DEMO/_next/static/chunks/0_49wx61nt0eg.css","style"]
+:HL["/workflow-sell-DEMO/_next/static/chunks/0m3qj5pf2qa23.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"id","t":"d","k":"k4049","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"cards","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"(app)","h":96,"c":"$Q2"}]]
-0:{"b":"0uD0_VfT1-zR2RxG7Kuk3","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"ZVJDkj9vgdp4bp00KNigv","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
